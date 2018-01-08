@@ -1,4 +1,4 @@
-var animalArray = ["bear", "raccoon", "weasal", "marten"];
+var animalArray = ["panda", "raccoon", "weasel", "marten", "orangutan", "elephant", "buffalo"];
 
 var renderButtons = function() {
 	$('#animal-list').empty();
@@ -9,9 +9,7 @@ var renderButtons = function() {
 	$('button').on("click", function() {
 		$('#animal-display').empty();
 		var animal = $(this).val();
-		console.log(animal);
 		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=5cw7Npg8v4WebXZ6xwNcquGDe6S72dND&limit=10";
-		console.log(queryURL);https://media3.giphy.com/media/V8qyUV70azbBm/200_s.gif
 
 		$.ajax({
 			url: queryURL,
@@ -23,10 +21,8 @@ var renderButtons = function() {
 			var results = response.data;
 
 			for (var i = 0; i < results.length; i++) {
-				console.log(i);
 				var gifDiv = $('<div class="item">');
 				var rating = results[i].rating;
-				console.log(rating);
 				var caption = $('<p>').text("Rating: " + rating);
 
 				var image = $('<img>');

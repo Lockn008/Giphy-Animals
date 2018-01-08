@@ -1,9 +1,40 @@
+body {
+	font-family: Arial, Verdana, Sans-serif;
+	font-weight: bold;
+}
+
 #animal-display {
-	width: 900;
-	float: left;
+	width: 1200px;
 }
 
 .item {
 	float: left;
-	padding: 10px;
+	padding: 5px;
+}
+
+button {
+	margin: 2px;
+	padding: 5px;
+	border: 1px solid blue;
+	border-radius: 3px;
+	color: blue;
+	font-weight: bold;
+}
+
+button:hover {
+	color: white;
+	background-color: blue;
+	font-weight: bold;
+}
+
+input {
+	padding: 5px;
+	border: 1px solid blue;
+	border-radius: 3px;
+	color: blue;
+	font-weight: bold;
+}
+
+form {
+	margin: 10px 0;
 }
