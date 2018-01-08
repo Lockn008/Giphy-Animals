@@ -1,0 +1,9 @@
+#animal-display {
+	width: 900;
+	float: left;
+}
+
+.item {
+	float: left;
+	padding: 10px;
+}
